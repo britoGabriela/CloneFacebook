@@ -1,0 +1,33 @@
+{
+    "language": "Español",
+
+    "text1": "Portugûes",
+    "text2": "English",
+    "text3": "Español",
+    "text4": "Más...",
+    "text5": "Teléfono o correo electrónico",
+    "text6": "Contraseña",
+    "text7": "¿Olvidaste tu",
+    "text8": "contraseña?",
+    "text9": "O",
+    "text10": "Buscar tu cuenta",
+    "text11": "Ingresa tu número de teléfono",
+    "text12": "Teléfono",
+    "text13": "Ingresa tu correo electrónico",
+    "text14": "Correo electrónico",
+    "text15": "Crear cuenta",
+    "text16": "Únete a Facebook",
+    "text17": "Te ayudaremos a crear una cuenta en pocos pasos.",
+    "text18": "",
+    "text19": "¿Quieres salir sin terminar de crear la cuenta?",
+    "text20": "Si sales ahora, perderás el progreso que hayas hecho.",
+
+    "button1": "Iniciar sesión",
+    "button2": "Crear cuenta de Facebook",
+    "button3": "Buscar por tu correo electrónico",
+    "button4": "Buscar por tu teléfono",
+    "button5": "Siguiente",
+    "button6": "¿Ya tienes una cuenta?",
+    "button7": "Seguir cureando la cuenta",
+    "button8": "Salir sin crearla cuenta"
+}
