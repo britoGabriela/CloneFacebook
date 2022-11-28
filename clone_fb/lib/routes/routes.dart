@@ -48,6 +48,8 @@ class Routes {
       page: () => ForgotPassword2(),
       transition: Transition.noTransition,
     ),
+
+    
     GetPage(
       name: teste,
       page: () => Teste(),

@@ -1,5 +1,8 @@
-import 'package:clone_fb/utils/app_colors.dart';
+import 'dart:async';
+
+import 'package:clone_fb/routes/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Teste extends StatefulWidget {
   const Teste({super.key});
@@ -8,12 +11,9 @@ class Teste extends StatefulWidget {
   State<Teste> createState() => _TesteState();
 }
 
-class _TesteState extends State<Teste> {
+class _TesteState extends State<Teste> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.secondary1,
-      body: Center(),
-    );
+    return Scaffold();
   }
 }
