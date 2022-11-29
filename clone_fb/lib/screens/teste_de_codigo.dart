@@ -1,8 +1,8 @@
-import 'dart:async';
+// ignore_for_file: prefer_const_constructors
 
-import 'package:clone_fb/routes/routes.dart';
+import 'package:bootstrap_icons/bootstrap_icons.dart';
+import 'package:clone_fb/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class Teste extends StatefulWidget {
   const Teste({super.key});
@@ -11,9 +11,11 @@ class Teste extends StatefulWidget {
   State<Teste> createState() => _TesteState();
 }
 
-class _TesteState extends State<Teste> with TickerProviderStateMixin {
+class _TesteState extends State<Teste> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(),
+    );
   }
 }

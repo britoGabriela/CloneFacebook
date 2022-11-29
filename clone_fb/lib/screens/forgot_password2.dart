@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:typicons_flutter/typicons_flutter.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ForgotPassword2 extends StatefulWidget {
   const ForgotPassword2({super.key});
@@ -50,7 +49,7 @@ class _ForgotPassword2State extends State<ForgotPassword2> {
           alignment: Alignment.bottomLeft,
           padding: EdgeInsets.only(top: 3),
           child: Text(
-            AppLocalizations.of(context)!.text10,
+            'text10'.tr,
             style: TextStyle(
               color: AppColors.fontBlack,
               fontSize: Dimensions.height18,
@@ -76,7 +75,7 @@ class _ForgotPassword2State extends State<ForgotPassword2> {
                   top: Dimensions.height30,
                 ),
                 child: Text(
-                  AppLocalizations.of(context)!.text13,
+                  'text13'.tr,
                   style: TextStyle(
                     color: AppColors.fontBlack,
                     fontSize: Dimensions.height17,
@@ -108,7 +107,7 @@ class _ForgotPassword2State extends State<ForgotPassword2> {
                     ),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.only(left: -4, top: 10),
-                      hintText: AppLocalizations.of(context)!.text14,
+                      hintText: 'text14'.tr,
                       hintStyle: TextStyle(
                         color: AppColors.fontgrey1,
                         fontSize: Dimensions.height16,
@@ -165,7 +164,7 @@ class _ForgotPassword2State extends State<ForgotPassword2> {
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   child: Text(
-                    AppLocalizations.of(context)!.text10,
+                    'text10'.tr,
                     style: TextStyle(
                       color: AppColors.secondary1,
                       fontSize: Dimensions.height15,
@@ -210,7 +209,7 @@ class _ForgotPassword2State extends State<ForgotPassword2> {
                 tapTargetSize: MaterialTapTargetSize.shrinkWrap,
               ),
               child: Text(
-                AppLocalizations.of(context)!.button4,
+                'button4'.tr,
                 style: TextStyle(
                   color: AppColors.primary1,
                   fontSize: Dimensions.height15,

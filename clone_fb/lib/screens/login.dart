@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:clone_fb/routes/routes.dart';
 import 'package:clone_fb/utils/app_colors.dart';
 import 'package:clone_fb/utils/dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -24,8 +24,10 @@ class Language {
 }
 
 class _LoginState extends State<Login> {
-  late String email = AppLocalizations.of(context)!.text5;
-  late String password = AppLocalizations.of(context)!.text6;
+  late String email;
+  late String password;
+
+  bool passwordVisible = false;
 
   final _formKey = GlobalKey<FormState>();
   final formValidVN = ValueNotifier<bool>(false);
@@ -42,6 +44,12 @@ class _LoginState extends State<Login> {
     focusNode2.dispose();
 
     super.dispose();
+  }
+
+   @override
+  void initState() {
+    focusNode2.addListener(() {});
+    super.initState();
   }
 
   int selected = -1;
@@ -126,17 +134,25 @@ class _LoginState extends State<Login> {
                                         if (languages[0].title == 'English') {
                                           languages[0].title = 'Português';
                                           languages[1].title = 'Españhol';
+                                          var locale = Locale('en', 'US');
+                                          Get.updateLocale(locale);
                                         } else {
                                           languages[0].title = 'English';
                                           languages[1].title = 'Españhol';
+                                          var locale = Locale('pt', 'BR');
+                                          Get.updateLocale(locale);
                                         }
                                       }
                                       if (index == 1) {
                                         if (languages[1].title == 'Españhol') {
                                           languages[1].title = 'English';
                                           languages[0].title = 'Portugûes';
+                                          var locale = Locale('es', 'ES');
+                                          Get.updateLocale(locale);
                                         } else {
                                           languages[1].title = 'Españhol';
+                                          var locale = Locale('en', 'US');
+                                          Get.updateLocale(locale);
                                         }
                                       }
 
@@ -234,7 +250,7 @@ class _LoginState extends State<Login> {
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
                     child: Text(
-                      'Mais...',
+                      'text4'.tr,
                       style: TextStyle(
                         color: AppColors.primary1,
                         fontSize: Dimensions.height14,
@@ -280,7 +296,7 @@ class _LoginState extends State<Login> {
                         Dimensions.width5,
                         0,
                       ),
-                      hintText: email,
+                      hintText: 'text5'.tr,
                       hintStyle: TextStyle(
                         color: AppColors.fontgrey1,
                         fontSize: Dimensions.height18,
@@ -309,9 +325,9 @@ class _LoginState extends State<Login> {
                       focusNode2.requestFocus();
                     }),
                     focusNode: focusNode2,
+                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: !passwordVisible,
                     controller: passwordController,
-                    obscureText: true,
-                    keyboardType: TextInputType.text,
                     cursorColor: AppColors.fontgrey1,
                     cursorHeight: 24,
                     cursorWidth: .5,
@@ -323,17 +339,36 @@ class _LoginState extends State<Login> {
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.fromLTRB(
                         Dimensions.width5,
-                        0,
+                        17,
                         Dimensions.width5,
                         0,
                       ),
-                      hintText: password,
+                      hintText: 'text6'.tr,
                       hintStyle: TextStyle(
                         color: AppColors.fontgrey1,
                         fontSize: Dimensions.height18,
                         fontWeight: FontWeight.w400,
                       ),
-                      // suffixIcon: ,
+                      suffixIcon: focusNode2.hasFocus
+                          ? IconButton(
+                              padding: EdgeInsets.only(left: 20, top: 12),
+                              icon: Icon(
+                                passwordVisible
+                                    ? BootstrapIcons.eye
+                                    : BootstrapIcons.eye_slash,
+                                color: AppColors.fontBlack,
+                                size: 20,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  passwordVisible = !passwordVisible;
+                                });
+                              },
+                            )
+                          : Icon(
+                              BootstrapIcons.eye_slash,
+                              color: Colors.transparent,
+                            ),
                       enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: AppColors.fontgrey2,
@@ -390,7 +425,7 @@ class _LoginState extends State<Login> {
                 tapTargetSize: MaterialTapTargetSize.shrinkWrap,
               ),
               child: Text(
-                AppLocalizations.of(context)!.button1,
+                'button1'.tr,
                 style: TextStyle(
                   color: !isKeyboard
                       ? AppColors.secondary1
@@ -442,7 +477,7 @@ class _LoginState extends State<Login> {
               child: Column(
                 children: [
                   Text(
-                    AppLocalizations.of(context)!.text7,
+                    'text7'.tr,
                     style: TextStyle(
                       color: AppColors.primary1,
                       fontSize: Dimensions.height16,
@@ -450,7 +485,7 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                   Text(
-                    AppLocalizations.of(context)!.text8,
+                    'text8'.tr,
                     style: TextStyle(
                       color: AppColors.primary1,
                       fontSize: Dimensions.height16,
@@ -481,7 +516,7 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                   Text(
-                    AppLocalizations.of(context)!.text9,
+                    'text9'.tr,
                     style: TextStyle(
                       color: AppColors.fontgrey1,
                       fontSize: Dimensions.height12,
@@ -540,7 +575,7 @@ class _LoginState extends State<Login> {
                   tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                 ),
                 child: Text(
-                  AppLocalizations.of(context)!.button2,
+                  'button2'.tr,
                   style: TextStyle(
                     color: AppColors.secondary1,
                     fontSize: Dimensions.height16,

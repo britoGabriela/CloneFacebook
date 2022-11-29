@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:typicons_flutter/typicons_flutter.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Register extends StatelessWidget {
   const Register({super.key});
@@ -43,7 +42,7 @@ class Register extends StatelessWidget {
           alignment: Alignment.bottomLeft,
           padding: EdgeInsets.only(top: 3),
           child: Text(
-            AppLocalizations.of(context)!.text15,
+            'text15'.tr,
             style: TextStyle(
               color: AppColors.fontBlack,
               fontSize: Dimensions.height18,
@@ -89,7 +88,7 @@ class Register extends StatelessWidget {
                   right: Dimensions.width30,
                 ),
                 child: Text(
-                  AppLocalizations.of(context)!.text16,
+                  'text16'.tr,
                   style: TextStyle(
                     color: AppColors.fontBlack,
                     fontSize: Dimensions.height18,
@@ -107,7 +106,7 @@ class Register extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      AppLocalizations.of(context)!.text17,
+                      'text17'.tr,
                       style: TextStyle(
                         color: AppColors.fontgrey1,
                         fontSize: Dimensions.height14,
@@ -119,7 +118,7 @@ class Register extends StatelessWidget {
                       height: Dimensions.height4,
                     ),
                     Text(
-                      AppLocalizations.of(context)!.text18,
+                      'text18'.tr,
                       style: TextStyle(
                         color: AppColors.fontgrey1,
                         fontSize: Dimensions.height14,
@@ -165,7 +164,7 @@ class Register extends StatelessWidget {
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   child: Text(
-                    AppLocalizations.of(context)!.button5,
+                    'button5'.tr,
                     style: TextStyle(
                       color: AppColors.secondary1,
                       fontSize: Dimensions.height14,
@@ -210,7 +209,7 @@ class Register extends StatelessWidget {
                 tapTargetSize: MaterialTapTargetSize.shrinkWrap,
               ),
               child: Text(
-                AppLocalizations.of(context)!.button6,
+                'button6'.tr,
                 style: TextStyle(
                   color: AppColors.primary1,
                   fontSize: Dimensions.height14,
@@ -247,7 +246,7 @@ class Register extends StatelessWidget {
           ),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
           title: Text(
-            AppLocalizations.of(context)!.text19,
+            'text19'.tr,
             style: TextStyle(
               color: AppColors.fontBlack,
               fontSize: Dimensions.height18,
@@ -256,7 +255,7 @@ class Register extends StatelessWidget {
             textAlign: TextAlign.left,
           ),
           content: Text(
-            AppLocalizations.of(context)!.text20,
+            'text20'.tr,
             style: TextStyle(
               color: AppColors.fontgrey1,
               fontSize: Dimensions.height16,
@@ -307,7 +306,7 @@ class Register extends StatelessWidget {
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   child: Text(
-                    AppLocalizations.of(context)!.button7,
+                    'button7'.tr,
                     style: TextStyle(
                       color: AppColors.fontBlack,
                       fontSize: Dimensions.height14,
@@ -357,7 +356,7 @@ class Register extends StatelessWidget {
                     tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   ),
                   child: Text(
-                    AppLocalizations.of(context)!.button8,
+                    'button8'.tr,
                     style: TextStyle(
                       color: AppColors.primary1,
                       fontSize: Dimensions.height14,
