@@ -2,6 +2,6 @@
 
 
 
-Este é um projeto em **Flutter** para *clonar* as telas iniciais do *app do Facebook* que eu desenvolvi para estudo pessoal.
+Projeto desenvolvido com o intuito de clonar as telas iniciais do aplicativo do Facebook em Flutter para estudo pessoal da linguagem de programação Dart.
 
-(This is a **Flutter** project to *clone* the initial screens of the *Facebook app*, which I developed for personal study.)
+(Project developed with the intention of cloning Facebook app home screens in Flutter for personal study of the Dart programming language.)
