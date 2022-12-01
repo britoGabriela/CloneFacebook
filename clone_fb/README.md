@@ -1,15 +1,6 @@
-# Clone of Facebook app home screens
+# clobe_fb
 
-Project developed with the intention of cloning Facebook app home screens in Flutter for personal study of the Dart programming language.
-
-This is what I've done so far, but it's still in development.
-
-For now, you can check the app's localization & internationalization by changing the system language on your Android phone (available in Portuguese, English and Spanish).
-
-
-
-
-
+A new Flutter project.
 
 #### Getting Started
 
