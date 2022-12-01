@@ -1,4 +1,4 @@
-## Clone of Facebook app home screens
+## Clone of Facebook app initial screens
 
 
 
